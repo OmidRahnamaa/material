@@ -1,0 +1,19 @@
+.side-logo {
+    display: inline-block;
+    width: 1.3rem;
+}
+
+.material-icons {
+    width: 1.3rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    word-wrap: normal;
+    direction: ltr;
+    margin-left: 2rem;
+}
+
+.timeline-block {
+    display: flex !important;
+    align-items: flex-start !important;
+}

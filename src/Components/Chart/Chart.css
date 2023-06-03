@@ -1,0 +1,25 @@
+.z-index-2 {
+    z-index: 2 !important;
+}
+
+.card {
+    border-radius: 0.7rem !important;
+}
+
+.border-radius {
+    border-radius: 0.5rem !important;
+}
+
+.text-sm {
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.chart-logo {
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-left: 0.25rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 0.875rem;
+}
