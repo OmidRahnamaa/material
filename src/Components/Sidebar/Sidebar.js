@@ -60,7 +60,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="./sign-in">
                         <img className="svg-sidebar" src={Login} alt="sign in"/>
                         <span>Sign In</span>
                     </Link>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './Navbar.css';
 import Gear from '../../assets/img/svgs/gear.svg';
 import Bell from '../../assets/img/svgs/bell.svg';
@@ -30,7 +31,7 @@ class Navbar extends Component {
                     <div className="container-fluid py-1 px-3">
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 ms-5">
-                                <li className="breadcrumb-item text-sm"><a className="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+                                <li className="breadcrumb-item text-sm"><Link className="opacity-5 text-dark" to="javascript:;">Pages</Link ></li>
                                 <li className="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
                             </ol>
                             <h6 className="font-weight-bolder mb-0">Dashboard</h6>
@@ -47,21 +48,21 @@ class Navbar extends Component {
                             </div>
                             <ul className="navbar-nav  justify-content-end">
                                 <li className="nav-item d-flex align-items-center">
-                                    <a className="btn btn-outline-primary btn-sm mb-0 btn-nav" target="_blank" href="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">Online Builder</a>
+                                    <Link className="btn btn-outline-primary btn-sm mb-0 btn-nav" target="_blank" to="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">Online Builder</Link >
                                 </li>
                                 <li className="nav-item px-2 d-flex align-items-center svg-detail">
-                                    <a href="javascript:;" className="nav-link text-body p-0">
+                                    <Link to="javascript:;" className="nav-link text-body p-0">
                                         <img src={Gear} alt="Gear Icon" className="svg-navbar" />
-                                    </a>
+                                    </Link >
                                 </li>
                                 <li className={`nav-item dropdown px-2 d-flex align-items-center svg-detail ${isOpenDropdown ? 'menu-open' : ''}`}>
-                                    <a href="javascript:;" className="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" onClick={this.toggleOpenDropdown}>
+                                    <Link to="javascript:;" className="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" onClick={this.toggleOpenDropdown}>
                                         <img src={Bell} alt="Bell Icon" className="svg-navbar" />
-                                    </a>
+                                    </Link >
                                     {isOpenDropdown && (
                                         <ul className="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4 drop-nav" aria-labelledby="dropdownMenuButton">
                                             <li className="mb-2">
-                                                <a className="dropdown-item border-radius-md" href="javascript:;">
+                                                <Link className="dropdown-item border-radius-md" to="javascript:;">
                                                     <div className="d-flex py-1">
                                                         <div className="my-auto">
                                                             <img src={Laur} alt="Avatar" className="avatar avatar-sm ms-3" />
@@ -76,10 +77,10 @@ class Navbar extends Component {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link >
                                             </li>
                                             <li className="mb-2">
-                                                <a className="dropdown-item border-radius-md" href="javascript:;">
+                                                <Link className="dropdown-item border-radius-md" to="javascript:;">
                                                     <div className="d-flex py-1">
                                                         <div className="my-auto">
                                                             <img src={Spotify} alt="Avatar" className="avatar avatar-sm bg-gradient-dark ms-3" />
@@ -94,10 +95,10 @@ class Navbar extends Component {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link >
                                             </li>
                                             <li>
-                                                <a className="dropdown-item border-radius-md" href="javascript:;">
+                                                <Link className="dropdown-item border-radius-md" to="javascript:;">
                                                     <div className="d-flex py-1">
                                                         <div className="avatar avatar-sm bg-gradient-secondary ms-3 my-auto">
                                                             <svg style={{ width: "12px", height: "12px" }} viewBox="0 0 43 36">
@@ -124,16 +125,16 @@ class Navbar extends Component {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link >
                                             </li>
                                         </ul>
                                     )}
                                 </li>
                                 <li className="nav-item d-flex px-2 align-items-center svg-detail">
-                                    <a href="../pages/sign-in.html" className="nav-link text-body font-weight-bold px-0">
+                                    <Link to="./sign-in" className="nav-link text-body font-weight-bold px-0">
                                         <img src={Person2} alt="Person" className="svg-navbar" />
                                         <span className="d-sm-inline d-none sign">Sign In</span>
-                                    </a>
+                                    </Link >
                                 </li>
                             </ul>
                         </div>

@@ -1,0 +1,74 @@
+.ellipsis-v {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0 !important;
+}
+
+.dropdown-table {
+    display: block !important;
+    transform: scale(.95) !important;
+    will-change: transform, box-shadow;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05) !important;
+    transition: top .35s ease !important;
+    cursor: pointer;
+    transform: translate(0px, 24px);
+    text-align: right;
+    animation: fade-in 300ms;
+}
+
+.team {
+    border-radius: 50% !important;
+    width: 1.5rem !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    animation: fade-in 400ms;
+}
+
+.avatar-group .avatar {
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+
+.avatar-group .avatar:hover {
+    z-index: 4;
+}
+
+.avatar-group .avatar+.avatar {
+    margin-right: -1rem;
+}
+
+.text-xxs {
+    opacity: 0.6 !important;
+    font-size: x-small !important;
+    padding: 1rem !important;
+}
+
+.progress {
+    height: 3px !important;
+    width: 120px !important;
+    margin: 0 !important;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

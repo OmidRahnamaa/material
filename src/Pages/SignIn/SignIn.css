@@ -1,0 +1,37 @@
+.bg-gray-200 {
+    background-color: #f0f2f5;
+}
+
+.fa-facebook,
+.fa-github,
+.fa-google {
+    width: 1.3rem !important;
+}
+
+.sign-logo {
+    justify-content: space-around;
+}
+
+.bg-gradient-primarys {
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(233, 30, 99, .4) !important;
+    border-radius: 0.5rem;
+}
+
+.form-labels {
+    top: -0.5rem;
+    line-height: 3.925rem;
+    margin-right: 0.725rem;
+    display: flex;
+    position: absolute;
+    font-size: 1rem;
+    color: #7b809a;
+    z-index: 10;
+}
+
+.sign-form {
+    background: none !important;
+    border: 1px solid #d2d6da !important;
+    border-radius: 0.375rem !important;
+    padding: 0.625rem !important;
+}
