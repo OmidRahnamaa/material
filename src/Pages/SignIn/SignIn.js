@@ -21,18 +21,18 @@ const SignIn = () => {
                                             <h4 className="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
                                             <div className="row mt-3 sign-logo">
                                                 <div className="col-2 text-center pe-2">
-                                                    <Link className="btn btn-link ps-3 pe-0" href="javascript:;">
-                                                        <img src={Facebook} className="fa-facebook text-white text-lg" />
+                                                    <Link className="btn btn-link p3-3 ps-0" to="#">
+                                                        <img src={Facebook} className="fa-facebook text-white text-lg" alt='np'/>
                                                     </Link>
                                                 </div>
                                                 <div className="col-2 text-center px-1">
-                                                    <Link className="btn btn-link pe-2" href="javascript:;">
-                                                        <img src={Github} className="fa-github text-white text-lg" />
+                                                    <Link className="btn btn-link pe-2" to="#">
+                                                        <img src={Github} className="fa-github text-white text-lg" alt='np'/>
                                                     </Link>
                                                 </div>
                                                 <div className="col-2 text-center ps-2">
-                                                    <Link className="btn btn-link ps-3 pe-0" href="javascript:;">
-                                                        <img src={Google} className="fa-google text-white text-lg" />
+                                                    <Link className="btn btn-link ps-3 pe-0" to="#">
+                                                        <img src={Google} className="fa-google text-white text-lg" alt='np'/>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -57,7 +57,7 @@ const SignIn = () => {
                                             </div>
                                             <p className="mt-4 text-sm text-center">
                                                 Don't have an account?
-                                                <Link href="../pages/sign-up.html" className="text-primary text-gradient font-weight-bold">Sign up</Link>
+                                                <Link to="../pages/sign-up.html" className="text-primary text-gradient font-weight-bold">Sign up</Link>
                                             </p>
                                         </form>
                                     </div>
@@ -74,23 +74,23 @@ const SignIn = () => {
                                             document.write(new Date().getFullYear())
                                         </script>,
                                         made with <i className="fa fa-heart" aria-hidden="true"></i> by
-                                        <Link href="https://www.creative-tim.com" className="font-weight-bold text-white" target="_blank">Creative Tim</Link>
+                                        <Link to="https://www.creative-tim.com" className="font-weight-bold text-white" target="_blank">Creative Tim</Link>
                                         for a better web.
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6">
                                     <ul className="nav nav-footer justify-content-center justify-content-lg-end">
                                         <li className="nav-item">
-                                            <Link href="https://www.creative-tim.com" className="nav-link text-white" target="_blank">Creative Tim</Link>
+                                            <Link to="https://www.creative-tim.com" className="nav-link text-white" target="_blank">Creative Tim</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="https://www.creative-tim.com/presentation" className="nav-link text-white" target="_blank">About Us</Link>
+                                            <Link to="https://www.creative-tim.com/presentation" className="nav-link text-white" target="_blank">About Us</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="https://www.creative-tim.com/blog" className="nav-link text-white" target="_blank">Blog</Link>
+                                            <Link to="https://www.creative-tim.com/blog" className="nav-link text-white" target="_blank">Blog</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="https://www.creative-tim.com/license" className="nav-link pe-0 text-white" target="_blank">License</Link>
+                                            <Link to="https://www.creative-tim.com/license" className="nav-link pe-0 text-white" target="_blank">License</Link>
                                         </li>
                                     </ul>
                                 </div>
