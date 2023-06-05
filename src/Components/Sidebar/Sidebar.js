@@ -11,6 +11,7 @@ import Person from '../../assets/img/svgs/person.svg'
 import Login from '../../assets/img/svgs/login.svg'
 import Assignment from '../../assets/img/svgs/assignment.svg'
 
+
 const Sidebar = () => {
     return (
         <aside className="sidebar my-3 col-lg-2">

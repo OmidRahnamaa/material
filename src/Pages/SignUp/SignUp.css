@@ -1,0 +1,103 @@
+.back-pic {
+    background-image: url('../../assets/img/illustrations/illustration-signup.jpg') !important;
+    background-size: cover !important;
+    border-radius: 0.5rem !important;
+}
+
+.card-plain {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.font-weight-bolder {
+    font-weight: 700 !important;
+}
+
+.email-text {
+    color: #7b809a !important;
+}
+
+.heading,
+.bodying,
+.footing {
+    background-color: transparent !important;
+    padding: 1.5rem !important;
+}
+
+.heading {
+    text-align: right;
+}
+
+.bodying {
+    flex: 1 1 auto;
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 10.5px 14px !important;
+    border: 1px solid #d2d6da !important;
+    border-radius: 0.7rem !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    color: #7b809a !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+
+.form-check-info{
+    color: #7b809a !important;
+}
+
+.check-detail {
+    border: 1px solid #d1d7e1 !important;
+    margin-top: .25rem !important;
+    position: relative !important;
+    cursor: pointer !important;
+    border-radius: .35rem !important;
+    background-color: transparent !important;
+    padding: 0.6rem !important;
+    float: right !important;
+}
+
+.check-label {
+    margin-right: 1.9rem !important;
+    top: 1px !important;
+    position: relative !important;
+}
+
+.form-check-input:focus {
+    background-color: none !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #e91e62d2 !important;
+}
+
+.bg-gradient-primaryb {
+    box-shadow: 0 3px 3px 0 rgba(233,30,99,.15),0 3px 1px -2px rgba(233,30,99,.2),0 1px 5px 0 rgba(233,30,99,.15);
+    background-image: linear-gradient(195deg,#ec407a,#d81b60);
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 0.75rem !important;
+    padding: 0.813rem 1rem !important;
+    text-align: center !important;
+}
+
+.sign-in-link {
+    text-align: center !important;
+}
+
+.text-gradient {
+    margin: 0.3rem !important;
+    color: #e91e63 !important;
+    text-decoration: none !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}

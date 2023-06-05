@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import Facebook from '../../assets/img/svgs/facebook.svg'
 import Github from '../../assets/img/svgs/github.svg'
 import Google from '../../assets/img/svgs/google.svg'
+import Switch from '@mui/material/Switch';
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 
 const SignIn = () => {
@@ -11,7 +14,7 @@ const SignIn = () => {
         <div className="bg-gray-200">
             <main className="main-content  mt-0">
                 <div className="page-header align-items-start min-vh-100">
-                    <span className="mask bg-gradient-dark opacity-6"></span>
+                    <span className="mask bg-gradient-darks opacity-6"></span>
                     <div className="container my-auto">
                         <div className="row">
                             <div className="col-lg-4 col-md-8 col-12 mx-auto">
@@ -22,17 +25,17 @@ const SignIn = () => {
                                             <div className="row mt-3 sign-logo">
                                                 <div className="col-2 text-center pe-2">
                                                     <Link className="btn btn-link p3-3 ps-0" to="#">
-                                                        <img src={Facebook} className="fa-facebook text-white text-lg" alt='np'/>
+                                                        <img src={Facebook} className="fa-facebook text-white text-lg" alt='np' />
                                                     </Link>
                                                 </div>
                                                 <div className="col-2 text-center px-1">
                                                     <Link className="btn btn-link pe-2" to="#">
-                                                        <img src={Github} className="fa-github text-white text-lg" alt='np'/>
+                                                        <img src={Github} className="fa-github text-white text-lg" alt='np' />
                                                     </Link>
                                                 </div>
                                                 <div className="col-2 text-center ps-2">
                                                     <Link className="btn btn-link ps-3 pe-0" to="#">
-                                                        <img src={Google} className="fa-google text-white text-lg" alt='np'/>
+                                                        <img src={Google} className="fa-google text-white text-lg" alt='np' />
                                                     </Link>
                                                 </div>
                                             </div>
@@ -44,20 +47,20 @@ const SignIn = () => {
                                                 <label className="form-labels">Email</label>
                                                 <input type="email" className="form-control sign-form" />
                                             </div>
-                                            <div className="input-group input-group-outline mb-3">
+                                            <div className="input-group input-group-outline">
                                                 <label className="form-labels">Password</label>
                                                 <input type="password" className="form-control sign-form" />
                                             </div>
                                             <div className="form-check form-switch d-flex align-items-center mb-3">
-                                                <input className="form-check-input" type="checkbox" id="rememberMe" checked />
-                                                <label className="form-check-label mb-0 ms-3" for="rememberMe">Remember me</label>
+                                                <Switch {...label} defaultChecked color='default' />
+                                                <label className="form-check-label mb-1 ms-3" htmlFor="rememberMe">Remember me</label>
                                             </div>
                                             <div className="text-center">
-                                                <button type="button" className="btn bg-gradient-primary w-100 my-4 mb-2">Sign in</button>
+                                                <button type="button" className="btn bg-gradient-primaryb w-100 my-4 mb-2">Sign in</button>
                                             </div>
                                             <p className="mt-4 text-sm text-center">
                                                 Don't have an account?
-                                                <Link to="../pages/sign-up.html" className="text-primary text-gradient font-weight-bold">Sign up</Link>
+                                                <Link to="/sign-up" className="text-gradient font-weight-bold">Sign up</Link>
                                             </p>
                                         </form>
                                     </div>
@@ -69,7 +72,7 @@ const SignIn = () => {
                         <div className="container">
                             <div className="row align-items-center justify-content-lg-between">
                                 <div className="col-12 col-md-6 my-auto">
-                                    <div className="copyright text-center text-sm text-white text-lg-start">
+                                    <div className="copyright text-center text-sm text-white text-lg-end">
                                         © <script>
                                             document.write(new Date().getFullYear())
                                         </script>,
@@ -89,7 +92,7 @@ const SignIn = () => {
                                         <li className="nav-item">
                                             <Link to="https://www.creative-tim.com/blog" className="nav-link text-white" target="_blank">Blog</Link>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item license">
                                             <Link to="https://www.creative-tim.com/license" className="nav-link pe-0 text-white" target="_blank">License</Link>
                                         </li>
                                     </ul>
