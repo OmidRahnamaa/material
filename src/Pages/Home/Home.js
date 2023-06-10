@@ -4,7 +4,7 @@ import Main from '../../Components/Main/Main'
 
 const Home = () => {
     return (
-        <div className='d-flex'>
+        <div className='back-stable d-flex'>
             <Sidebar />
             <Main />
         </div>

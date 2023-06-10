@@ -17,26 +17,26 @@ const Sidebar = () => {
         <aside className="sidebar my-3 col-lg-2">
             <ul className="nav flex-column">
                 <li className="nav-title">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/">
                         <img className='navbar-brand-img h-100' src={mainLogo} alt='main-logo' />
                         <span>Material</span>
                     </Link>
                 </li>
                 <hr className='horizontal light mt-0 mb-2'/>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/">
                         <img className="svg-sidebar" src={Dashboard} alt="dashboard" />
                         <span>Dashboard</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/table">
                         <img className="svg-sidebar" src={Table} alt="table"/>
                         <span>Tables</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/billing">
                         <img className="svg-sidebar" src={Receipt} alt="billing"/>
                         <span>Billing</span>
                     </Link>
@@ -48,26 +48,26 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/notification">
                         <img className="svg-sidebar" src={Notifi} alt="notification"/>
                         <span>Notifications</span>
                     </Link>
                 </li>
                 <h6 className='pe-4 my-3 text-uppercase text-white text-detail'>account pages</h6>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/profile">
                         <img className="svg-sidebar" src={Person} alt="profile"/>
                         <span>Profile</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="./sign-in">
+                    <Link className="nav-link text-white" to="/sign-in">
                         <img className="svg-sidebar" src={Login} alt="sign in"/>
                         <span>Sign In</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
+                    <Link className="nav-link text-white" to="/sign-up">
                         <img className="svg-sidebar" src={Assignment} alt="sign up"/>
                         <span>Sign Up</span>
                     </Link>

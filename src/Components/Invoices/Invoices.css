@@ -1,0 +1,23 @@
+.btn-pink {
+    color: #e91e63;
+    border: 1px solid #e91e63;
+}
+
+.invoice {
+    background-color: none !important;
+}
+
+.invc {
+    padding-right: 0 !important;
+    text-align: right !important;
+    color: #344767 !important;
+}
+
+.text-grey {
+    color: #344767 !important;
+    font-size: 0.875rem !important;
+}
+
+.text-xs {
+    font-size: 0.75rem  !important;
+}

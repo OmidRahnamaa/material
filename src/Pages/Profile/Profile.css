@@ -1,0 +1,68 @@
+.back-img {
+    background-image: url('../../assets/img/nature.jpeg') !important;
+    padding: 10rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.mt-n6 {
+    margin-top: -4rem;
+}
+
+.avatar-xl {
+    width: 4.5rem;
+}
+
+.select-detail {
+    float: right;
+    margin-right: 0.5rem;
+}
+
+.nav-fill {
+    background-color: #f8f9fa;
+    border-radius: 0.75rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #fff !important;
+    border-radius: .5rem !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+}
+
+.form-check {
+    display: flex !important;
+}
+
+.fa-twitter, .fa-facebook2, .fa-instagram, .fa-user-edit {
+    width: 1.3rem !important;
+    float: left !important;
+}
+
+.text-design {
+    color: #e91e63 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    left: 0;
+    position: absolute;
+}
+
+.btn-pink {
+    background-size: 150% !important;
+    padding: 0.5rem !important;
+    font-weight: 700 !important;
+    border-radius: 0.5rem !important;
+    position: relative;
+    font-size: 0.7rem !important;
+    text-transform: uppercase !important;
+    color: #e91e63 !important;
+    border-color: #e91e63 !important;
+}
+
+.mb-detail {
+    margin-bottom: 1.1rem;
+}

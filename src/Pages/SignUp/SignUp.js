@@ -42,7 +42,7 @@ const SignUp = () => {
                                                 <div className="form-check form-check-info text-end pe-0">
                                                     <input className="form-check-input check-detail" type="checkbox" value="" id="flexCheckDefault" />
                                                     <label className="form-check-label check-label" htmlFor="flexCheckDefault">
-                                                        I agree the <Link href="#" className="text-dark font-weight-bolder">Terms and Conditions</Link>
+                                                        I agree the <Link to="#" className="text-dark font-weight-bolder">Terms and Conditions</Link>
                                                     </label>
                                                 </div>
                                                 <div className="text-center">
@@ -53,7 +53,7 @@ const SignUp = () => {
                                         <div className="card-footer footing text-center pt-0 px-lg-2 px-1">
                                             <p className="mb-2 text-sm mx-auto sign-in-link">
                                                 Already have an account?
-                                                <Link href="/sign-in" className="text-gradient font-weight-bold">Sign in</Link>
+                                                <Link to="/sign-in" className="text-gradient font-weight-bold">Sign in</Link>
                                             </p>
                                         </div>
                                     </div>

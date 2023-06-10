@@ -10,7 +10,7 @@ const Chart = () => {
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-primary shadow-primary border-radius py-3 pe-1">
                             <div className="chart">
-                                <canvas id="chart-bars" className="chart-canvas" height="170"></canvas>
+                                <canvas id="chart-line" className="chart-canvas" height="170"></canvas>
                             </div>
                         </div>
                     </div>

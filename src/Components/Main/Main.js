@@ -9,7 +9,7 @@ import './Main.css'
 
 const Main = () => {
     return (
-        <main className="main-content col-lg-10 position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <main className="main-content col-lg-10 side-space position-relative max-height-vh-100 h-100 border-radius-lg ">
             <Navbar />
             <div className="container-fluid py-4">
                 <Card />
@@ -18,7 +18,7 @@ const Main = () => {
                     <MainCard />
                     <SideCard />
                 </div>
-                <footer className="footer py-4  ">
+                <footer className="footer py-1">
                     <div className="container-fluid">
                         <div className="row align-items-center justify-content-lg-between">
                             <div className="col-lg-6 mb-lg-0 mb-4">

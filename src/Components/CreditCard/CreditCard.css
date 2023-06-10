@@ -1,0 +1,50 @@
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.z-index-1 {
+    z-index: 1 !important;
+}
+
+.opacity-2 {
+    opacity: 0.2 !important;
+}
+
+.bg-black {
+    background-color: black !important;
+    height: 96% !important;
+    left: 0 !important;
+}
+
+.bank-logo {
+    top: 31% !important;
+    width: 1.5rem !important;
+    margin-left: 0 !important;
+}
+
+.bank-align {
+    text-align: center !important;
+}
+
+.new-card {
+    color: #fff !important;
+    font-weight: 600 !important;
+    border-radius: 0.5rem !important;
+}
+
+.new-card:hover {
+    color: #fff !important;
+}
+
+.add-detail {
+    margin-left: 0 !important;
+}
+
+.mastervisa {
+    width: 2rem !important;
+}
+
+.edit {
+    margin-right: 4rem !important; 
+    cursor: pointer !important;
+}

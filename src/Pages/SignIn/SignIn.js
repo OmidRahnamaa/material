@@ -13,7 +13,7 @@ const SignIn = () => {
     return (
         <div className="bg-gray-200">
             <main className="main-content  mt-0">
-                <div className="page-header align-items-start min-vh-100">
+                <div className="page-header back-img align-items-start min-vh-100">
                     <span className="mask bg-gradient-darks opacity-6"></span>
                     <div className="container my-auto">
                         <div className="row">
@@ -45,11 +45,11 @@ const SignIn = () => {
                                         <form role="form" className="text-start">
                                             <div className="input-group input-group-outline my-3">
                                                 <label className="form-labels">Email</label>
-                                                <input type="email" className="form-control sign-form" />
+                                                <input type="email" className="form-control sign-form" placeholder="&nbsp;"/>
                                             </div>
                                             <div className="input-group input-group-outline">
                                                 <label className="form-labels">Password</label>
-                                                <input type="password" className="form-control sign-form" />
+                                                <input type="password" className="form-control sign-form" placeholder="&nbsp;"/>
                                             </div>
                                             <div className="form-check form-switch d-flex align-items-center mb-3">
                                                 <Switch {...label} defaultChecked color='default' />
@@ -68,7 +68,7 @@ const SignIn = () => {
                             </div>
                         </div>
                     </div>
-                    <footer className="footer position-absolute bottom-2 py-2 w-100">
+                    <footer className="footer position-absolute bottom-2 py-1 w-100" style={{left : "0"}}>
                         <div className="container">
                             <div className="row align-items-center justify-content-lg-between">
                                 <div className="col-12 col-md-6 my-auto">
