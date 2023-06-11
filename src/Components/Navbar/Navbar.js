@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './Navbar.css';
-import TextField from '@mui/material/TextField';
 import Gear from '../../assets/img/svgs/gear.svg';
 import Bell from '../../assets/img/svgs/bell.svg';
 import Person2 from '../../assets/img/svgs/person2.svg';

@@ -100,11 +100,10 @@ const CreditCard = () => {
                     <img src={Bank} className="material-icons bank-logo opacity-10" alt="bank" />
                   </div>
                 </div>
-                <div className="card-body pt-0 p-3 text-center">
+                <div className="card-body pt-1 p-3 text-center">
                   <h6 className="text-center mb-0">{bankAccount.name}</h6>
-                  <span className="text-xs">{bankAccount.balance}</span>
                   <hr className="horizontal dark my-3" />
-                  <h5 className="mb-0 bank-align">+${bankAccount.balance}</h5>
+                  <h5 className="mb-0 bank-align">{bankAccount.balance}</h5>
                 </div>
               </div>
             </div>
@@ -118,9 +117,8 @@ const CreditCard = () => {
                     <img src={Wallet} className="material-icons bank-logo opacity-10" alt="wallet" />
                   </div>
                 </div>
-                <div className="card-body pt-0 p-3 text-center">
+                <div className="card-body pt-1 p-3 text-center">
                   <h6 className="text-center mb-0">{paypalAccount.name}</h6>
-                  <span className="text-xs">{paypalAccount.balance}</span>
                   <hr className="horizontal dark my-3" />
                   <h5 className="mb-0 bank-align">{paypalAccount.balance}</h5>
                 </div>

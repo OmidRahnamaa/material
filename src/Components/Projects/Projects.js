@@ -1,240 +1,134 @@
-import React from 'react'
-import './Projects.css'
-import Asana from "../../assets/img/small-logos/logo-asana.svg"
-import Github from "../../assets/img/small-logos/github.svg"
-import Atlassian from "../../assets/img/small-logos/logo-atlassian.svg"
-import Bootstrap from "../../assets/img/small-logos/bootstrap.svg"
-import Slack from "../../assets/img/small-logos/logo-slack.svg"
-import Devto from "../../assets/img/small-logos/devto.svg"
-const Projects = () => {
+import React from 'react';
+import './Projects.css';
+import AsanaLogo from '../../assets/img/small-logos/logo-asana.svg';
+import GithubLogo from '../../assets/img/small-logos/github.svg';
+import AtlassianLogo from '../../assets/img/small-logos/logo-atlassian.svg';
+import BootstrapLogo from '../../assets/img/small-logos/bootstrap.svg';
+import SlackLogo from '../../assets/img/small-logos/logo-slack.svg';
+import DevtoLogo from '../../assets/img/small-logos/devto.svg';
+import Ellipsis from '../../assets/img/svgs/ellipsis.svg';
+
+const MyMergedComponent = () => {
+    const projects = [
+        {
+            name: 'Asana',
+            budget: '$2,500',
+            status: 'working',
+            completion: 60,
+            progressColor: 'info',
+            logo: AsanaLogo,
+        },
+        {
+            name: 'Github',
+            budget: '$5,000',
+            status: 'done',
+            completion: 100,
+            progressColor: 'success',
+            logo: GithubLogo,
+        },
+        {
+            name: 'Atlassian',
+            budget: '$3,800',
+            status: 'working',
+            completion: 80,
+            progressColor: 'primary',
+            logo: AtlassianLogo,
+        },
+        {
+            name: 'Bootstrap',
+            budget: '$1,200',
+            status: 'pending',
+            completion: 30,
+            progressColor: 'warning',
+            logo: BootstrapLogo,
+        },
+        {
+            name: 'Slack',
+            budget: '$4,500',
+            status: 'done',
+            completion: 100,
+            progressColor: 'success',
+            logo: SlackLogo,
+        },
+        {
+            name: 'Dev.to',
+            budget: '$1,800',
+            status: 'working',
+            completion: 40,
+            progressColor: 'info',
+            logo: DevtoLogo,
+        },
+    ];
+
+
     return (
-        <div className="row">
-            <div className="col-12">
-                <div className="card my-4">
-                    <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                        <div className="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                            <h6 className="text-white text-capitalize pe-3" style={{textAlign : 'right'}}>Projects table</h6>
+        <div>
+            <h1>My Projects</h1>
+            <div className="row">
+                <div className="col-12">
+                    <div className="card my-4">
+                        <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                            <div className="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                                <h6 className="text-white text-capitalize pe-3" style={{ textAlign: 'right' }}>Projects table</h6>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card-body px-0 pb-2">
-                        <div className="table-responsive p-0">
-                            <table className="table align-items-center justify-content-center mb-0">
-                                <thead>
-                                    <tr>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Project</th>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Budget</th>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Completion</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Asana} className="avatar avatar-sm rounded-circle ms-3" alt="spotify" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Asana</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$2,500</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">working</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">60%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{ width: "60%" }}></div>
+                        <div className="card-body px-0 pb-2">
+                            <div className="table-responsive p-0">
+                                <table className="table align-items-center justify-content-center mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Project</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Budget</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Completion</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {projects.map((project, index) => (
+                                            <tr key={index}>
+                                                <td>
+                                                    <div className="d-flex px-2">
+                                                        <div>
+                                                            <img src={project.logo} className="avatar avatar-sm rounded-circle ms-3" alt={project.name} />
+                                                        </div>
+                                                        <div className="my-auto">
+                                                            <h6 className="mb-0 text-sm">{project.name}</h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Github} className="avatar avatar-sm rounded-circle ms-3" alt="invision" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Github</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$5,000</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">done</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">100%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></div>
+                                                </td>
+                                                <td>
+                                                    <p className="text-sm font-weight-bold mb-0">{project.budget}</p>
+                                                </td>
+                                                <td>
+                                                    <span className="text-xs text-grey font-weight-bold">{project.status}</span>
+                                                </td>
+                                                <td className="align-middle text-center">
+                                                    <div className="d-flex align-items-center justify-content-center">
+                                                        <span className="ms-2 text-xs font-weight-bold">{project.completion}%</span>
+                                                        <div>
+                                                            <div className="progress">
+                                                                <div className={`progress-bar bg-${project.progressColor}`} role="progressbar" aria-valuenow={project.completion} aria-valuemin="0" aria-valuemax="100" style={{ width: `${project.completion}%` }}></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Atlassian} className="avatar avatar-sm rounded-circle ms-3" alt="jira" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Atlassian</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$3,400</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">canceled</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">30%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30" style={{ width: "30%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Bootstrap} className="avatar avatar-sm rounded-circle ms-3" alt="webdev" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Bootstrap</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$14,000</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">working</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">80%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80" style={{ width: "80%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Slack} className="avatar avatar-sm rounded-circle ms-3" alt="slack" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Slack</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$1,000</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">canceled</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">0%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style={{ width: "0%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="d-flex px-2">
-                                                <div>
-                                                    <img src={Devto} className="avatar avatar-sm rounded-circle ms-3" alt="xd" />
-                                                </div>
-                                                <div className="my-auto">
-                                                    <h6 className="mb-0 text-sm">Devto</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p className="text-sm font-weight-bold mb-0">$2,300</p>
-                                        </td>
-                                        <td>
-                                            <span className="text-xs font-weight-bold">done</span>
-                                        </td>
-                                        <td className="align-middle text-center">
-                                            <div className="d-flex align-items-center justify-content-center">
-                                                <span className="me-2 text-xs font-weight-bold">100%</span>
-                                                <div>
-                                                    <div className="progress">
-                                                        <div className="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="align-middle">
-                                            <button className="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                                </td>
+                                                <td className="align-middle">
+                                                    <button type="button" className="btn btn-link text-secondary mb-0">
+                                                        <img src={Ellipsis} style={{width : '1.3rem'}} className="fa fa-edit me-2"/>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Projects
+export default MyMergedComponent;

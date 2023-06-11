@@ -21,3 +21,7 @@
 .text-xs {
     font-size: 0.75rem  !important;
 }
+
+.list-group>li:last-child {
+    margin-bottom: 0 !important;
+}
