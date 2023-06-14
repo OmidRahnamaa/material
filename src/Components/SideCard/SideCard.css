@@ -21,3 +21,7 @@
 .timeline-content {
     margin-right: 0.5rem;
 }
+
+.timeline-block:last-child {
+    margin-bottom: 0 !important;
+}

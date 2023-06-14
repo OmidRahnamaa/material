@@ -1,6 +1,17 @@
 import React from 'react'
 import './Chart.css'
 import Clock2 from '../../assets/img/svgs/clock2.svg'
+import { Chart } from 'chart.js'
+
+const data = [
+    { date: 'M' , count: 50},
+    { date: 'T' , count: 20},
+    { date: 'W' , count: 10},
+    { date: 'T' , count: 22},
+    { date: 'F' , count: 50},
+    { date: 'S' , count: 10},
+    { date: 'S' , count: 40},
+]
 
 const Chart = () => {
     return (

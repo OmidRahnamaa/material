@@ -63,7 +63,6 @@ const MyMergedComponent = () => {
 
     return (
         <div>
-            <h1>My Projects</h1>
             <div className="row">
                 <div className="col-12">
                     <div className="card my-4">
@@ -101,21 +100,21 @@ const MyMergedComponent = () => {
                                                     <p className="text-sm font-weight-bold mb-0">{project.budget}</p>
                                                 </td>
                                                 <td>
-                                                    <span className="text-xs text-grey font-weight-bold">{project.status}</span>
+                                                    <span className="text-xs font-weight-bold">{project.status}</span>
                                                 </td>
                                                 <td className="align-middle text-center">
                                                     <div className="d-flex align-items-center justify-content-center">
                                                         <span className="ms-2 text-xs font-weight-bold">{project.completion}%</span>
                                                         <div>
                                                             <div className="progress">
-                                                                <div className={`progress-bar bg-${project.progressColor}`} role="progressbar" aria-valuenow={project.completion} aria-valuemin="0" aria-valuemax="100" style={{ width: `${project.completion}%` }}></div>
+                                                                <div className={`progress-bar bg-${project.progressColor}`} role="progressbar" aria-valuenow={project.completion} aria-valuemin="0" aria-valuemax="100" style={{ width: `${project.completion}%`, minWidth: '10%' }}></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td className="align-middle">
                                                     <button type="button" className="btn btn-link text-secondary mb-0">
-                                                        <img src={Ellipsis} style={{width : '1.3rem'}} className="fa fa-edit me-2"/>
+                                                        <img src={Ellipsis} style={{ width: '1.3rem' }} className="fa fa-edit me-2" />
                                                     </button>
                                                 </td>
                                             </tr>
