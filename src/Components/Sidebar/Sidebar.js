@@ -19,57 +19,51 @@ const Sidebar = () => {
                 <li className="nav-title">
                     <Link className="nav-link text-white" to="/">
                         <img className='navbar-brand-img h-100' src={mainLogo} alt='main-logo' />
-                        <span>Material</span>
+                        <span>متریال</span>
                     </Link>
                 </li>
                 <hr className='horizontal light mt-0 mb-2'/>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/">
                         <img className="svg-sidebar" src={Dashboard} alt="dashboard" />
-                        <span>Dashboard</span>
+                        <span>داشبورد</span>
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/table">
                         <img className="svg-sidebar" src={Table} alt="table"/>
-                        <span>Tables</span>
+                        <span>جداول</span>
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/billing">
                         <img className="svg-sidebar" src={Receipt} alt="billing"/>
-                        <span>Billing</span>
+                        <span>صورت حساب</span>
                     </Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link text-white" to="#">
-                        <img className="svg-sidebar" src={View} alt="view"/>
-                        <span>Virtual Reality</span>
-                    </Link>
-                </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/notification">
                         <img className="svg-sidebar" src={Notifi} alt="notification"/>
-                        <span>Notifications</span>
+                        <span>اطلاع رسانی</span>
                     </Link>
                 </li>
                 <h6 className='pe-4 my-3 text-uppercase text-white text-detail'>account pages</h6>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/profile">
                         <img className="svg-sidebar" src={Person} alt="profile"/>
-                        <span>Profile</span>
+                        <span>پروفایل</span>
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/sign-in">
                         <img className="svg-sidebar" src={Login} alt="sign in"/>
-                        <span>Sign In</span>
+                        <span>ورود کاربر</span>
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{margin : '0'}}>
                     <Link className="nav-link text-white" to="/sign-up">
                         <img className="svg-sidebar" src={Assignment} alt="sign up"/>
-                        <span>Sign Up</span>
+                        <span>ثبت نام</span>
                     </Link>
                 </li>
             </ul>

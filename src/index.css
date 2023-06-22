@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'IranYekan', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +8,18 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'IranYekan',source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: IranYekan;
+  src: url(./assets/fonts/Qs_Iranyekan.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ black.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ bold.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ extrablack.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ extrabold.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ light.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ medium.ttf) format('tff');
+  src: url(./assets/fonts/Qs_Iranyekan\ thin.ttf) format('tff');
 }

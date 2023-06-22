@@ -29,12 +29,14 @@ const CreditCard = () => {
   ]);
 
   const [bankAccount, setBankAccount] = useState({
-    name: 'Belong Interactive',
+    name: 'حقوق',
+    title: 'متعلق به تعاملی',
     balance: '+$2000',
   });
 
   const [paypalAccount, setPaypalAccount] = useState({
-    name: 'Freelance Payment',
+    name: 'پی پال ',
+    title: 'متعلق به تعاملی',
     balance: '$455.00',
   });
 
@@ -64,11 +66,11 @@ const CreditCard = () => {
                 <div className="d-flex">
                   <div className="d-flex">
                     <div className="ms-4">
-                      <p className="text-white text-sm opacity-8 mb-0">Card Holder</p>
+                      <p className="text-white text-sm opacity-8 mb-0">دارنده کارت</p>
                       <h6 className="text-white mb-0">{creditCards[0].cardHolder}</h6>
                     </div>
                     <div>
-                      <p className="text-white text-sm opacity-8 mb-0">Expires</p>
+                      <p className="text-white text-sm opacity-8 mb-0">انقضا</p>
                       <h6 className="text-white mb-0">{creditCards[0].expires}</h6>
                     </div>
                   </div>
@@ -100,8 +102,9 @@ const CreditCard = () => {
                     <img src={Bank} className="material-icons bank-logo opacity-10" alt="bank" />
                   </div>
                 </div>
-                <div className="card-body pt-1 p-3 text-center">
+                <div className="card-body pt-0 p-3 text-center">
                   <h6 className="text-center mb-0">{bankAccount.name}</h6>
+                  <span class="text-xs">{bankAccount.title}</span>
                   <hr className="horizontal dark my-3" />
                   <h5 className="mb-0 bank-align">{bankAccount.balance}</h5>
                 </div>
@@ -117,8 +120,9 @@ const CreditCard = () => {
                     <img src={Wallet} className="material-icons bank-logo opacity-10" alt="wallet" />
                   </div>
                 </div>
-                <div className="card-body pt-1 p-3 text-center">
+                <div className="card-body pt-0 p-3 text-center">
                   <h6 className="text-center mb-0">{paypalAccount.name}</h6>
+                  <span class="text-xs">{bankAccount.title}</span>
                   <hr className="horizontal dark my-3" />
                   <h5 className="mb-0 bank-align">{paypalAccount.balance}</h5>
                 </div>
@@ -131,12 +135,12 @@ const CreditCard = () => {
             <div className="card-header invoice pb-0 p-3">
               <div className="row">
                 <div className="col-6 d-flex align-items-center">
-                  <h6 className="mb-0">Payment Method</h6>
+                  <h6 className="mb-0">روش پرداخت</h6>
                 </div>
                 <div className="col-6 text-start">
                   <Link className="btn bg-gradient-dark new-card mb-0" to="#">
                     <img src={Add} className="material-icons add-detail text-sm" alt="add" />
-                    &nbsp;&nbsp;Add New Card
+                    &nbsp;&nbsp;اضافه کردن کارت جدید
                   </Link>
                 </div>
               </div>

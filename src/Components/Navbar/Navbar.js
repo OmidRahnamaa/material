@@ -7,6 +7,7 @@ import Person2 from '../../assets/img/svgs/person2.svg';
 import Laur from '../../assets/img/team-2.jpg'
 import Spotify from '../../assets/img/small-logos/logo-spotify.svg'
 import Clock from '../../assets/img/svgs/clock.svg';
+import Breadcrumb from '../Breadcrumb/Breadcrumb';
 
 class Navbar extends Component {
     constructor(props) {
@@ -29,13 +30,7 @@ class Navbar extends Component {
             <div>
                 <nav className="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
                     <div className="container-fluid py-1 px-3">
-                        <nav aria-label="breadcrumb">
-                            <ol className="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 ms-5">
-                                <li className="breadcrumb-item text-sm"><Link className="opacity-5 text-dark" to="javascript:;">Pages</Link ></li>
-                                <li className="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
-                            </ol>
-                            <h6 className="font-weight-bolder mb-0">Dashboard</h6>
-                        </nav>
+                        <Breadcrumb />
                         <div className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                             <div className="me-md-auto ps-md-3 d-flex align-items-center">
                                 <div className="input-group input-group-outline">
@@ -48,7 +43,7 @@ class Navbar extends Component {
                             </div>
                             <ul className="navbar-nav  justify-content-end">
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="btn btn-outline-primary btn-sm mb-0 btn-nav" target="_blank" to="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">Online Builder</Link >
+                                    <Link className="btn btn-outline-primary btn-sm mb-0 btn-nav" target="_blank" to="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">سازنده آنلاین</Link >
                                 </li>
                                 <li className="nav-item px-2 d-flex align-items-center svg-detail">
                                     <Link to="javascript:;" className="nav-link text-body p-0">
@@ -69,11 +64,11 @@ class Navbar extends Component {
                                                         </div>
                                                         <div className="d-flex flex-column justify-content-center">
                                                             <h6 className="text-sm font-weight-small mb-1">
-                                                                <span className="font-weight-bold">New message</span> from Laur
+                                                                <span className="font-weight-bold">پیام جدید</span> از لائور
                                                             </h6>
                                                             <p className="text-xs text-secondary mb-0">
                                                                 <img src={Clock} alt='clock' className='clock' />
-                                                                13 minutes ago
+                                                                13 دقیقه پیش
                                                             </p>
                                                         </div>
                                                     </div>
@@ -87,11 +82,11 @@ class Navbar extends Component {
                                                         </div>
                                                         <div className="d-flex flex-column justify-content-center">
                                                             <h6 className="text-sm font-weight-normal mb-1">
-                                                                <span className="font-weight-bold">New album</span> by Travis Scott
+                                                                <span className="font-weight-bold">آلبوم جدید</span> توسط تراویس اسکات
                                                             </h6>
                                                             <p className="text-xs text-secondary mb-0">
                                                                 <img src={Clock} alt='clock' className='clock' />
-                                                                1 day
+                                                                1 روز
                                                             </p>
                                                         </div>
                                                     </div>
@@ -102,7 +97,7 @@ class Navbar extends Component {
                                                     <div className="d-flex py-1">
                                                         <div className="avatar avatar-sm bg-gradient-secondary ms-3 my-auto">
                                                             <svg style={{ width: "12px", height: "12px" }} viewBox="0 0 43 36">
-                                                                <title>credit-card</title>
+                                                                <title>کارت اعتباری</title>
                                                                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                                                     <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fillRule="nonzero">
                                                                         <g transform="translate(1716.000000, 291.000000)">
@@ -117,11 +112,11 @@ class Navbar extends Component {
                                                         </div>
                                                         <div className="d-flex flex-column justify-content-center">
                                                             <h6 className="text-sm font-weight-normal mb-1">
-                                                                Payment successfully completed
+                                                                پرداخت با موفقیت انجام شد
                                                             </h6>
                                                             <p className="text-xs text-secondary mb-0">
                                                                 <img src={Clock} alt='clock' className='clock' />
-                                                                2 days
+                                                                2 روز
                                                             </p>
                                                         </div>
                                                     </div>
@@ -133,7 +128,7 @@ class Navbar extends Component {
                                 <li className="nav-item d-flex px-2 align-items-center svg-detail">
                                     <Link to="./sign-in" className="nav-link text-body font-weight-bold px-0">
                                         <img src={Person2} alt="Person" className="svg-navbar" />
-                                        <span className="d-sm-inline d-none sign">Sign In</span>
+                                        <span className="d-sm-inline d-none sign">ثبت نام</span>
                                     </Link >
                                 </li>
                             </ul>

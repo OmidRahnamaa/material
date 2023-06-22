@@ -5,44 +5,44 @@ import Person from '../../assets/img/svgs/person.svg';
 
 const cardData = [
     {
-      title: "Today's Money",
+      title: "موجودی امروز",
       amount: "$53k",
       icon: Weekend,
       headerClass: "bg-gradient-darkc",
       iconClass: "shadow-dark",
       changeColor: "success",
       changePercentage: "+55%",
-      changeText: "than last week",
+      changeText: "نسبت به هفته گذشته",
     },
     {
-      title: "Today's Users",
+      title: "کاربران امروز",
       amount: "2,300",
       icon: Person,
       headerClass: "bg-gradient-primary",
       iconClass: "shadow-primary",
       changeColor: "success",
       changePercentage: "+3%",
-      changeText: "than last month",
+      changeText: "نسبت به ماه گذشته",
     },
     {
-      title: "New Clients",
+      title: "مشتریان جدید",
       amount: "3,462",
       icon: Person,
       headerClass: "bg-gradient-success",
       iconClass: "shadow-success",
       changeColor: "danger",
       changePercentage: "-2%",
-      changeText: "than yesterday",
+      changeText: "نسبت به دیروز",
     },
     {
-      title: "Sales",
+      title: "فروش",
       amount: "$103,430",
       icon: Weekend,
       headerClass: "bg-gradient-info",
       iconClass: "shadow-info",
       changeColor: "success",
       changePercentage: "+5%",
-      changeText: "than yesterday",
+      changeText: "نسبت به دیروز",
     },
   ];
   
@@ -65,7 +65,7 @@ const Card = () => {
             <hr className="dark horizontal my-0" />
             <div className="card-footer p-3">
               <p className="mb-0c">
-                <span className={`text-${card.changeColor} text-sm font-weight-bolder`}>
+                <span className={`text-${card.changeColor} me-1 text-sm font-weight-bolder`} style={{float : 'left'}}>
                   {card.changePercentage}
                 </span>
                 {card.changeText}

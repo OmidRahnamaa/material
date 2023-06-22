@@ -66,3 +66,7 @@
 .mb-detail {
     margin-bottom: 1.1rem;
 }
+
+.nav .nav-pills .nav-link.active {
+    animation: .2s ease;
+}

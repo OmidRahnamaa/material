@@ -13,7 +13,7 @@ const MyMergedComponent = () => {
         {
             name: 'Asana',
             budget: '$2,500',
-            status: 'working',
+            status: 'در حال انجام',
             completion: 60,
             progressColor: 'info',
             logo: AsanaLogo,
@@ -21,7 +21,7 @@ const MyMergedComponent = () => {
         {
             name: 'Github',
             budget: '$5,000',
-            status: 'done',
+            status: 'انجام شده',
             completion: 100,
             progressColor: 'success',
             logo: GithubLogo,
@@ -29,7 +29,7 @@ const MyMergedComponent = () => {
         {
             name: 'Atlassian',
             budget: '$3,800',
-            status: 'working',
+            status: 'در حال انجام',
             completion: 80,
             progressColor: 'primary',
             logo: AtlassianLogo,
@@ -37,7 +37,7 @@ const MyMergedComponent = () => {
         {
             name: 'Bootstrap',
             budget: '$1,200',
-            status: 'pending',
+            status: 'انتظار',
             completion: 30,
             progressColor: 'warning',
             logo: BootstrapLogo,
@@ -45,15 +45,15 @@ const MyMergedComponent = () => {
         {
             name: 'Slack',
             budget: '$4,500',
-            status: 'done',
+            status: 'انجام شده',
             completion: 100,
             progressColor: 'success',
             logo: SlackLogo,
         },
         {
-            name: 'Dev.to',
+            name: 'Devto',
             budget: '$1,800',
-            status: 'working',
+            status: 'در حال انجام',
             completion: 40,
             progressColor: 'info',
             logo: DevtoLogo,
@@ -68,7 +68,7 @@ const MyMergedComponent = () => {
                     <div className="card my-4">
                         <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div className="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                                <h6 className="text-white text-capitalize pe-3" style={{ textAlign: 'right' }}>Projects table</h6>
+                                <h6 className="text-white text-capitalize pe-3" style={{ textAlign: 'right' }}>جدول پروژه ها</h6>
                             </div>
                         </div>
                         <div className="card-body px-0 pb-2">
@@ -76,10 +76,10 @@ const MyMergedComponent = () => {
                                 <table className="table align-items-center justify-content-center mb-0">
                                     <thead>
                                         <tr>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Project</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Budget</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Completion</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">پروژه</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">بودجه</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">وضعیت</th>
+                                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">تکمیل</th>
                                             <th></th>
                                         </tr>
                                     </thead>

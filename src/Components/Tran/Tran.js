@@ -51,7 +51,7 @@ const Tran = () => {
           icon: Exclamation,
           title: 'Webflow',
           date: '26 March 2020, at 05:00 AM',
-          amount: 'Pending',
+          amount: 'انتظار',
           buttonClass: 'btn-outline-dark',
           amountClass: 'text-grey',
         },
@@ -64,7 +64,7 @@ const Tran = () => {
         <div className="card-header pb-0 px-3">
           <div className="row">
             <div className="col-md-6">
-              <h6 className="mb-0">Your Transactions</h6>
+              <h6 className="mb-0">معاملات شما</h6>
             </div>
             <div className="col-md-6 d-flex justify-content-start justify-content-md-end align-items-center">
               <img src={DateIcon} alt="date" className="material-icons ms-2 text-lg" />
@@ -73,7 +73,7 @@ const Tran = () => {
           </div>
         </div>
         <div className="card-body pt-4 p-3">
-          <h6 className="text-uppercase text-body text-xs font-weight-bolder mb-3">Newest</h6>
+          <h6 className="text-uppercase text-body text-xs font-weight-bolder mb-3">جدیدترین</h6>
           <ul className="list-group">
             {transactions.map((transaction, index) => (
               <li

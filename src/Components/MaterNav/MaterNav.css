@@ -1,0 +1,13 @@
+.blur {
+    background-color: hsla(0,0%,100%,.8) !important;
+    box-shadow: 0 .1rem 0.5rem rgba(0,0,0,.15)!important;
+}
+
+.opacity {
+    opacity: 0.6;
+    width: 1.1rem !important;
+}
+
+.text-grey:hover {
+    background-color: transparent !important;
+}

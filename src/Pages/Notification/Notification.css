@@ -1,0 +1,57 @@
+.bg-gradient-success:hover {
+    box-shadow: 0 14px 26px -12px rgba(76, 175, 80, .4), 0 4px 23px 0 rgba(76, 175, 80, .15), 0 8px 10px -5px rgba(76, 175, 80, .2);
+}
+
+.bg-gradient-info:hover {
+    box-shadow: 0 14px 26px -12px rgba(26, 115, 232, .4), 0 4px 23px 0 rgba(26, 115, 232, .15), 0 8px 10px -5px rgba(26, 115, 232, .2);
+}
+
+.bg-gradient-warning {
+    background-image: linear-gradient(195deg, #ffa726, #fb8c00);
+}
+
+.bg-gradient-warning:hover {
+    box-shadow: 0 14px 26px -12px rgba(251, 140, 0, .4), 0 4px 23px 0 rgba(251, 140, 0, .15), 0 8px 10px -5px rgba(251, 140, 0, .2);
+}
+
+.bg-gradient-danger {
+    background-image: linear-gradient(195deg, #ef5350, #e53935);
+}
+
+.bg-gradient-danger:hover {
+    box-shadow: 0 14px 26px -12px rgba(244, 67, 53, .4), 0 4px 23px 0 rgba(244, 67, 53, .15), 0 8px 10px -5px rgba(244, 67, 53, .2);
+}
+
+.toast-btn {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    text-align-last: center !important;
+    font-size: 0.8rem !important;
+    padding: 0.6rem !important;
+}
+
+.toast-btn:hover {
+    color: #fff;
+}
+
+.fade{
+    width: 23rem !important;
+    max-width: 100%;
+    font-size: .875rem;
+    pointer-events: auto;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0.4rem !important;
+    border: none !important;
+}
+
+.link-title {
+    color: #344767 !important;
+    text-decoration: none !important;
+}
+
+.link-title:hover {
+    color: #e63e91 !important;
+}

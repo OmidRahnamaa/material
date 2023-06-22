@@ -36,10 +36,10 @@ class MainCard extends Component {
                     <div className="card-header pb-0" style={{ height: '5rem' }}>
                         <div className="row">
                             <div className="col-lg-6 col-7" style={{ textAlign: "right" }}>
-                                <h6>Projects</h6>
+                                <h6>پروژه ها</h6>
                                 <p className="text-sm mb-0">
                                     <i className="fa fa-check text-info" aria-hidden="true"></i>
-                                    <span className="font-weight-bold ms-1">30 done</span> this month
+                                    <span className="font-weight-bold ms-1">30</span> در این ماه انجام شد.
                                 </p>
                             </div>
                             <div className="col-lg-6 col-5 my-auto text-start">
@@ -63,10 +63,10 @@ class MainCard extends Component {
                             <table className="table align-items-center mb-0">
                                 <thead>
                                     <tr>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Companies</th>
-                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Members</th>
-                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Budget</th>
-                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Completion</th>
+                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">شرکت ها</th>
+                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">اعضا</th>
+                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">بودجه</th>
+                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">تکمیل</th>
                                     </tr>
                                 </thead>
                                 <tbody>

@@ -101,3 +101,7 @@
 .btn:focus {
     box-shadow: none !important;
 }
+
+.m-detail {
+    margin-top: 4.2rem !important;
+}

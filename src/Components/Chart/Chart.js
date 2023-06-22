@@ -1,17 +1,7 @@
 import React from 'react'
 import './Chart.css'
 import Clock2 from '../../assets/img/svgs/clock2.svg'
-import { Chart } from 'chart.js'
-
-const data = [
-    { date: 'M' , count: 50},
-    { date: 'T' , count: 20},
-    { date: 'W' , count: 10},
-    { date: 'T' , count: 22},
-    { date: 'F' , count: 50},
-    { date: 'S' , count: 10},
-    { date: 'S' , count: 40},
-]
+import RedChart from '../RedChart/RedChart'
 
 const Chart = () => {
     return (
@@ -40,9 +30,7 @@ const Chart = () => {
                 <div className="card z-index-2  ">
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-success shadow-success border-radius py-3 pe-1">
-                            <div className="chart">
-                                <canvas id="chart-line" className="chart-canvas" height="170"></canvas>
-                            </div>
+                            <RedChart />
                         </div>
                     </div>
                     <div className="card-body">

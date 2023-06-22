@@ -9,54 +9,54 @@ const authorsData = [
     name: 'John Michael',
     email: 'john@creative-tim.com',
     avatar: Team2,
-    role: 'Manager',
-    department: 'Organization',
-    status: 'Online',
+    role: 'مدیر',
+    department: 'تشکیلات',
+    status: 'آنلاین',
     employed: '23/04/18',
   },
   {
     name: 'Alexa Liras',
     email: 'alexa@creative-tim.com',
     avatar: Team3,
-    role: 'Programator',
-    department: 'Developer',
-    status: 'Offline',
+    role: 'برنامه نویس',
+    department: 'توسعه دهنده',
+    status: 'آفلاین',
     employed: '11/01/19',
   },
   {
     name: 'Laurent Perrier',
     email: 'laurent@creative-tim.com',
     avatar: Team4,
-    role: 'Executive',
-    department: 'Projects',
-    status: 'Online',
+    role: 'اجرایی',
+    department: 'پروژه ها',
+    status: 'آنلاین',
     employed: '19/09/17',
   },
   {
     name: 'Michael Levi',
     email: 'michael@creative-tim.com',
     avatar: Team3,
-    role: 'Programator',
-    department: 'Developer',
-    status: 'Online',
+    role: 'برنامه نویس',
+    department: 'توسعه دهنده',
+    status: 'آنلاین',
     employed: '24/12/08',
   },
   {
     name: 'Richard Gran',
     email: 'richard@creative-tim.com',
     avatar: Team2,
-    role: 'Manager',
-    department: 'Executive',
-    status: 'Offline',
+    role: 'مدیر',
+    department: 'اجرایی',
+    status: 'آفلاین',
     employed: '04/10/21',
   },
   {
     name: 'Miriam Eric',
     email: 'miriam@creative-tim.com',
     avatar: Team4,
-    role: 'Programator',
-    department: 'Developer',
-    status: 'Offline',
+    role: 'برنامه نویس',
+    department: 'توسعه دهنده',
+    status: 'آفلاین',
     employed: '14/09/20',
   },
 ];
@@ -69,7 +69,7 @@ const Authors = () => {
           <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
             <div className="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
               <h6 className="text-white text-capitalize pe-3" style={{ textAlign: 'right' }}>
-                Authors table
+                جدول نویسنده ها
               </h6>
             </div>
           </div>
@@ -78,10 +78,10 @@ const Authors = () => {
               <table className="table align-items-center mb-0">
                 <thead>
                   <tr>
-                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">نویسنده</th>
+                    <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">وظیفه</th>
+                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">وضعیت</th>
+                    <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">به کار گرفته شده</th>
                     <th className="text-secondary opacity-7"></th>
                   </tr>
                 </thead>
@@ -104,7 +104,7 @@ const Authors = () => {
                         <p className="text-xs text-secondary mb-0">{author.department}</p>
                       </td>
                       <td className="align-middle text-center text-sm">
-                        <span className={`badge badge-sm ${author.status === 'Online' ? 'bg-gradient-success' : 'bg-gradient-secondary'}`}>
+                        <span className={`badge badge-sm ${author.status === 'آنلاین' ? 'bg-gradient-success' : 'bg-gradient-secondary'}`}>
                           {author.status}
                         </span>
                       </td>
@@ -113,7 +113,7 @@ const Authors = () => {
                       </td>
                       <td className="align-middle">
                         <a href="javascript:;" className="text-secondary text-decoration-none font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
+                          ویرایش کنید
                         </a>
                       </td>
                     </tr>
