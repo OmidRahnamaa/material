@@ -16,12 +16,12 @@ const Chart = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                        <h6 className="mb-0 ">Website Views</h6>
-                        <p className="text-sm ">Last Campaign Performance</p>
+                        <h6 className="mb-0 ">بازدیدهای وبسایت</h6>
+                        <p className="text-sm ">آخرین عملکرد کمپین</p>
                         <hr className="dark horizontal" />
                         <div className="d-flex ">
                             <img src={Clock2} className="chart-logo" />
-                            <p className="mb-0 text-sm"> campaign sent 2 days ago </p>
+                            <p className="mb-0 text-sm"> کمپین ارسال شده 2 روز پیش </p>
                         </div>
                     </div>
                 </div>
@@ -30,16 +30,18 @@ const Chart = () => {
                 <div className="card z-index-2  ">
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-success shadow-success border-radius py-3 pe-1">
-                            <RedChart />
+                            <div className="chart">
+                                <RedChart />
+                            </div>
                         </div>
                     </div>
                     <div className="card-body">
-                        <h6 className="mb-0 "> Daily Sales </h6>
-                        <p className="text-sm "> (<span className="font-weight-bolder">+15%</span>) increase in today sales. </p>
+                        <h6 className="mb-0 "> فروش روزانه </h6>
+                        <p className="text-sm "> (<span className="font-weight-bolder">+15%</span>) افزایش فروش امروز </p>
                         <hr className="dark horizontal" />
                         <div className="d-flex ">
                             <img src={Clock2} className="chart-logo" />
-                            <p className="mb-0 text-sm"> updated 4 min ago </p>
+                            <p className="mb-0 text-sm"> 4 دقیقه پیش به روز شد </p>
                         </div>
                     </div>
                 </div>
@@ -54,12 +56,12 @@ const Chart = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                        <h6 className="mb-0 ">Completed Tasks</h6>
-                        <p className="text-sm ">Last Campaign Performance</p>
+                        <h6 className="mb-0 ">وظایف تکمیل شده</h6>
+                        <p className="text-sm ">آخرین عملکرد کمپین</p>
                         <hr className="dark horizontal" />
                         <div className="d-flex ">
                             <img src={Clock2} className="chart-logo" />
-                            <p className="mb-0 text-sm">just updated</p>
+                            <p className="mb-0 text-sm">به تازگی به روز شد</p>
                         </div>
                     </div>
                 </div>

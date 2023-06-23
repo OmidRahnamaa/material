@@ -65,7 +65,7 @@ const Card = () => {
             <hr className="dark horizontal my-0" />
             <div className="card-footer p-3">
               <p className="mb-0c">
-                <span className={`text-${card.changeColor} me-1 text-sm font-weight-bolder`} style={{float : 'left'}}>
+                <span className={`text-${card.changeColor} ms-2 text-sm font-weight-bolder`}>
                   {card.changePercentage}
                 </span>
                 {card.changeText}
