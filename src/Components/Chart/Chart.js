@@ -2,6 +2,8 @@ import React from 'react'
 import './Chart.css'
 import Clock2 from '../../assets/img/svgs/clock2.svg'
 import RedChart from '../RedChart/RedChart'
+import GreenChart from '../GreenChart/GreenChart'
+import BlackChart from '../BlaclChart/BlackChart'
 
 const Chart = () => {
     return (
@@ -10,9 +12,7 @@ const Chart = () => {
                 <div className="card z-index-2 ">
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-primary shadow-primary border-radius py-3 pe-1">
-                            <div className="chart">
-                                <canvas id="chart-line" className="chart-canvas" height="170"></canvas>
-                            </div>
+                            <RedChart />
                         </div>
                     </div>
                     <div className="card-body">
@@ -30,9 +30,7 @@ const Chart = () => {
                 <div className="card z-index-2  ">
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-success shadow-success border-radius py-3 pe-1">
-                            <div className="chart">
-                                <RedChart />
-                            </div>
+                            <GreenChart />
                         </div>
                     </div>
                     <div className="card-body">
@@ -50,9 +48,7 @@ const Chart = () => {
                 <div className="card z-index-2 ">
                     <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                         <div className="bg-gradient-dark shadow-dark border-radius py-3 pe-1">
-                            <div className="chart">
-                                <canvas id="chart-line-tasks" className="chart-canvas" height="170"></canvas>
-                            </div>
+                            <BlackChart />
                         </div>
                     </div>
                     <div className="card-body">

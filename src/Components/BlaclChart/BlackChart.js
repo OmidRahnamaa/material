@@ -1,36 +1,40 @@
 import React from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
-import './RedChart.css'
+import './BlackChart.css'
 
 const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-const RedChart = () => {
+const BlackChart = () => {
     const options = {
         backgroundColor: "transparent",
         theme: "dark2",
-        axisY:{        
-            interval: 20,
+        axisY: {
+            labelAngle: 0,
+            interval: 260,
             gridDashType: "dash",
             tickColor: "transparent",
-          },
-        axisX:{
+        },
+        axisX: {
+            labelAngle: -30,
             tickColor: "transparent",
             lineDashType: 'dash'
         },
         data: [{
             color: "#fff",
-            type: "column",
+            type: "line",
             indexLabelFontColor: "#5A5757",
             indexLabelPlacement: "outside",
             dataPoints: [
-                { label: 'M', y: 50 },
-                { label: 'T', y: 20 },
-                { label: 'W', y: 10 },
-                { label: 'T', y: 22 },
-                { label: 'F', y: 50 },
-                { label: 'S', y: 10 },
-                { label: 'S', y: 40 },
+                { label: 'Apr', y: 50 },
+                { label: 'May', y: 40 },
+                { label: 'Jun', y: 300 },
+                { label: 'Jul', y: 220 },
+                { label: 'Aug', y: 500 },
+                { label: 'Sep', y: 250 },
+                { label: 'Oct', y: 400 },
+                { label: 'Nov', y: 230 },
+                { label: 'Dec', y: 500 },
             ]
         }]
     };
@@ -42,4 +46,4 @@ const RedChart = () => {
     );
 };
 
-export default RedChart;
+export default BlackChart;
